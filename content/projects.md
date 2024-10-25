@@ -1,3 +1,49 @@
+---
+title: 'Projects'
+date: 2024-05-19
+type: landing
+
+design:
+  background:
+    # Name of image in `assets/media/`.
+    image: background3.jpg
+    # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+    image_darken: 0.2
+    #  Options are `cover` (default), `contain`, or `actual` size.
+    image_size: cover
+    # Options include `left`, `center` (default), or `right`.
+    image_position: center
+    # Use a fun parallax-like fixed background effect on desktop? true/false
+    image_parallax: true
+    # Text color (true=light, false=dark, or remove for the dynamic theme color).
+    text_color_light: true
+  # Choose how many columns the section has. Valid values: '1' or '2'.
+  columns: '1'
+
+  # Toggle between the various page layout types.
+  #   1 = List
+  #   2 = Compact
+  #   3 = Card
+  #   5 = Showcase
+  view: 3
+
+  # For Showcase view, flip alternate rows?
+  flip_alt_rows: true
+  
+# Page sections
+sections:
+  - block: collection
+    content:
+      title: Selected Projects
+      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      filters:
+        folders:
+          - project
+    design:
+      view: article-grid
+      fill_image: false
+      columns: 3
+    
 
 ---
 # An instance of the Portfolio widget.
@@ -65,4 +111,4 @@ design:
 
   # For Showcase view, flip alternate rows?
   flip_alt_rows: true
----
+
